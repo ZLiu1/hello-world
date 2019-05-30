@@ -1,8 +1,3 @@
-library(ggpubr)
-ggbarplot(at, x = "Genotype", y = "MRL", add = "mean_se",
-          fill =  "Genotype", palette = "jco", 
-          position = position_dodge(0.8))+
-  stat_compare_means(aes(group = Genotype), label = "p.signif", label.y = 10) 
 setwd("~/GEL3D")
 gelPC<-read.csv('remainingTraits_PCs_VIF8.csv',header = TRUE)
 # genotype
